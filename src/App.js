@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import BasicExample from './examples/BasicExample';
 import Todos from './examples/Todos';
+import Items from './examples/Items';
+import StorageKeys from './examples/StorageKeys';
 
 function App() {
 	return (
@@ -11,6 +13,8 @@ function App() {
 			{/* <BasicExample />
 			 */}
 			<Todos />
+			{/* <Items />
+			<StorageKeys /> */}
 		</div>
 	);
 }
