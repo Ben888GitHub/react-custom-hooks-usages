@@ -23,7 +23,8 @@ export const useTodo = () => {
 	const [newTodo, setNewTodo] = useState(initialTodo);
 
 	const addTodo = () => {
-		setTodos([...todos, newTodo]);
+		// setTodos([...todos, newTodo]);
+		setTodos((prevTodos) => [...prevTodos, newTodo]);
 		setNewTodo({ ...initialTodo });
 	};
 

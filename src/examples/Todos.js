@@ -5,11 +5,11 @@ function Todos() {
 	const { todos, addTodo, removeTodo, setNewTodo, newTodo } = useTodo();
 
 	const handleChange = (e) => {
-		setNewTodo({
-			...newTodo,
+		setNewTodo((prevNewTodo) => ({
+			...prevNewTodo,
 			[e.target.name]: e.target.value,
 			id: todos.length + 1
-		});
+		}));
 	};
 
 	return (
